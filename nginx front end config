@@ -1,0 +1,8 @@
+server {
+  server_name ip domain.com ww.domain.com;
+  root /home/ubuntu/app-deploy/out;
+  index index.html indexmhtm;
+  location / {
+  try_files $uri /index.html;
+  }  
+}

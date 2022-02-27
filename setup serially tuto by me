@@ -1,0 +1,16 @@
+mern (1) : https://jasonwatmore.com/post/2019/11/18/react-nodejs-on-aws-how-to-deploy-a-mern-stack-app-to-amazon-ec2
+
+only react (worked) : https://dev.to/xarala221/the-easiest-way-to-deploy-a-react-web-application-2l8a
+
+mern (2) : https://www.youtube.com/watch?v=c7It9bBM8IM
+
+
+1) install node,mongo,nginx,etc..... on server
+2) pull project to opt/bacend opt/fronted
+3) go to each project install necessaity things npm i
+3) create folder mkdir home/ubuntu/app-deploy
+4) cp -R opt/frontend/build home/ubuntu/app-deploy (copy build)
+5) setup nginx etc/nginx/sites-availabl/make-a-file (nginx config)
+6) setup sites-enabled sudo ln -s /etc/nginx/sites-available/react_counter /etc/nginx/sites-enabled
+7) test nginx config. sudo nginx -t
+8) restart nginx. sudo systemctl restart nginx
