@@ -1,0 +1,38 @@
+----------------------------------IP & Dmains----------------------------------
+
+http://34.207.110.91/
+http://excelsiorresortsylhet.com/
+http://admin.excelsiorresortsylhet.com/
+
+----------How to connect to console using ubuntu terminal--------------
+
+chmod 400 ~/Downloads/excelsiorresortsylhet.pem 
+ssh -i ~/Downloads/excelsiorresortsylhet.pem ubuntu@ec2-34-207-110-91.compute-1.amazonaws.com
+
+~/Downloads/excelsiorresortsylhet.pem is the directory of the pem key
+
+
+-----------------------------source codes in server----------------------------
+
+from root folder - 
+opt/customer-frontend/
+opt/admin-frontend/
+opt/backend/
+
+--------------------------------Build files stored to use-----------------------
+
+from root folder - 
+home/ubuntu/app-deploy/build/   (customer build)
+home/ubuntu/app-deploy/admin-build/   (admin build)
+
+------------------------------------NGINX Config files------------------------
+
+from root folder - 
+etc/nginx/sites-available/customer
+etc/nginx/sites-available/admin
+
+---------------------------------ADMIN Credentials---------------------------
+
+EXCELSIOR ADMIN 
+USER : 01733200180
+PASSWORD : E01733200180_V1!
